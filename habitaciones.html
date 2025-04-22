@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitaciones - Hotel Paraiso</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    body { 
+      margin: 0; 
+      font-family: 'Montserrat', sans-serif; 
+      background: #f4f4f4; 
+      color: #333; 
+    }
+    header { 
+      background-color: #006994; 
+      color: white; 
+      padding: 30px 20px; 
+      text-align: center; 
+    }
+    .content { 
+      max-width: 1200px; 
+      margin: auto; 
+      padding: 20px; 
+      line-height: 1.7; 
+    }
+    .gallery { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+      padding: 0 10px;
+    }
+    .gallery img { 
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .room-types { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px; 
+      margin: 30px 0; 
+      padding: 0 10px;
+    }
+    .room-card { 
+      background: white; 
+      border-radius: 10px; 
+      padding: 20px; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .btn-reserva { 
+      display: inline-block; 
+      background-color: #006994; 
+      color: white; 
+      padding: 12px 24px; 
+      text-decoration: none; 
+      border-radius: 30px; 
+      margin: 20px 0; 
+    }
+    @media (max-width: 600px) {
+      .room-card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Habitaciones de Ensueño</h1>
+    <p>Comodidad, elegancia y vistas increibles</p>
+  </header>
+  
+  <div class="content">
+    <p>
+      Nuestras habitaciones estan cuidadosamente decoradas para brindar un ambiente acogedor con toques modernos.
+    </p>
+    
+    <h2>Tipos de Habitaciones</h2>
+    <div class="room-types">
+      <div class="room-card">
+        <h3>Habitacion Estandar</h3>
+        <p>25 m², vista al jardin, cama Queen</p>
+        <p>Desde $120/noche</p>
+      </div>
+      <div class="room-card">
+        <h3>Habitacion Deluxe</h3>
+        <p>35 m², vista parcial al mar, cama King</p>
+        <p>Desde $180/noche</p>
+      </div>
+      <div class="room-card">
+        <h3>Suite Ejecutiva</h3>
+        <p>50 m², vista completa al mar, sala de estar</p>
+        <p>Desde $250/noche</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Habitacion 1">
+    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6" alt="Habitacion 3">
+  </div>
+  
+  <div style="text-align: center;">
+    <a href="https://www.booking.com" target="_blank" class="btn-reserva">Reservar ahora</a>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Hotel Paraiso. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

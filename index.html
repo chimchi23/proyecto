@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Paraiso</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #ffffff, #ddf1ff);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #003355;
+      text-align: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: clamp(14px, 3vw, 18px);
+    }
+    section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+      padding: 0 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #002233;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      header {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hotel Paraiso</h1>
+    <p>Relajate, descubre y vive el paraiso</p>
+  </header>
+
+  <nav>
+    <a href="spa.html">Spa</a>
+    <a href="restaurante.html">Restaurante</a>
+    <a href="habitaciones.html">Habitaciones</a>
+    <a href="playa.html">Playa</a>
+    <a href="tours.html">Tours</a>
+  </nav>
+
+  <section>
+    <h2>Descubre nuestro paraiso</h2>
+    <p>Explora nuestras experiencias unicas y sumergete en un mundo de relajacion, sabor, descanso, aventura y naturaleza.</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Playa">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Comida">
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874" alt="Spa">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hotel Paraiso. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
